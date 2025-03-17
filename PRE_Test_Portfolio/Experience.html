@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Page</title>
+    <link rel="stylesheet" href="Home_Style.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+
+<script type="module" src="Home_Animation.js"></script>
+
+<body>
+    
+    <div class="dot-navigation">
+      <div class="dot-nav__item" data-section="skills-section">
+          <div class="dot-nav__dot" style="--dot-color: #ca03f1"></div>
+          <div class="dot-nav__label">SKILLS</div>
+      </div>
+      <div class="dot-nav__item" data-section="experience-section">
+          <div class="dot-nav__dot" style="--dot-color: #00ff93;"></div>
+          <div class="dot-nav__label">EXPERIENCE</div>
+      </div>
+      <div class="dot-nav__item" data-section="education-section">
+          <div class="dot-nav__dot" style="--dot-color: #3ef50d;"></div>
+          <div class="dot-nav__label">EDUCATION</div>
+      </div>
+      <div class="dot-nav__item" data-section="projects-section">
+          <div class="dot-nav__dot" style="--dot-color: #00eaff;"></div>
+          <div class="dot-nav__label">MY PROJECTS</div>
+      </div>
+      <div class="drag-handle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round">
+            <path d="M12 2v20M12 2l-4 4M12 2l4 4M12 22l-4-4M12 22l4-4M2 12h20M2 12l4-4M2 12l4 4M22 12l-4-4M22 12l-4 4"/>
+          </svg>
+      </div>
+    </div>
+
+    <header>
+        <h1 class="fluid" id="hello-section">My Work Experience</h1>
+    </header>
+
+    <main>
+        <section class="content fluid" id="experience-section">
+            <h2><span aria-hidden="true">I`m work at&nbsp;</span></h2>
+            <ul aria-hidden="true" style="--count: 3">
+              <li style="--i: 0">IT Soft Development<br />Manual QA<br />2022 – Present</li>
+              <li style="--i: 1">Freelance<br />FullStack & QA<br />2022 – Present</li>
+              <li style="--i: 2">University & Pet Projects<br />FullStack & QA & Java<br />2020 – Present</li>
+            </ul>
+        </section>
+
+        <section class="task-section">
+          <h2 class="fluid task">Check menu <br /> To know more</h2>
+        </section>
+        
+    </main>
+
+    <footer>Derus Denis`s Web Portfolio &copy; 2025</footer>
+</body>
+</html>
