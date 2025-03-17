@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="fluid">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <link rel="stylesheet" href="error_style.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<script type="module" src="/PRE_Test_Portfolio/Home_Animation.js"></script>
+<script type="module" src="error_backend.js"></script>
+
+<body>
+
+    <div class="dot-navigation">
+      <div class="dot-nav__item" data-section="skills-section">
+          <div class="dot-nav__dot" style="--dot-color: #ca03f1"></div>
+          <div class="dot-nav__label">SKILLS</div>
+      </div>
+      <div class="dot-nav__item" data-section="experience-section">
+          <div class="dot-nav__dot" style="--dot-color: #00ff93;"></div>
+          <div class="dot-nav__label">EXPERIENCE</div>
+      </div>
+      <div class="dot-nav__item" data-section="education-section">
+          <div class="dot-nav__dot" style="--dot-color: #3ef50d;"></div>
+          <div class="dot-nav__label">EDUCATION</div>
+      </div>
+      <div class="dot-nav__item" data-section="projects-section">
+          <div class="dot-nav__dot" style="--dot-color: #00eaff;"></div>
+          <div class="dot-nav__label">MY PROJECTS</div>
+      </div>
+      <div class="drag-handle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round">
+            <path d="M12 2v20M12 2l-4 4M12 2l4 4M12 22l-4-4M12 22l4-4M2 12h20M2 12l4-4M2 12l4 4M22 12l-4-4M22 12l-4 4"/>
+          </svg>
+      </div>
+    </div>
+
+    <div class="cloak__wrapper">
+        <div class="cloak__container">
+            <div class="cloak"></div>
+        </div>
+    </div>
+
+    <h1 id="errorCode">000 <span id="errorCodeSpan" aria-hidden="true">000</span></h1>
+
+    <div class="info">
+        <p id="errorDescription">An unexpected error occurred.</p>
+        <a class="follow" href="/PRE_Test_Portfolio/Home.html">Return to Homepage</a>
+    </div>
+
+</body>
+</html>
