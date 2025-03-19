@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="Home_Style.css">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+
+<script type="module" src="Home_Animation.js"></script>
+
+<body>
+    
+    <div class="dot-navigation">
+      <div class="dot-nav__item" data-section="skills-section">
+          <div class="dot-nav__dot" style="--dot-color: #ca03f1"></div>
+          <div class="dot-nav__label">SKILLS</div>
+      </div>
+      <div class="dot-nav__item" data-section="experience-section">
+          <div class="dot-nav__dot" style="--dot-color: #00ff93;"></div>
+          <div class="dot-nav__label">EXPERIENCE</div>
+      </div>
+      <div class="dot-nav__item" data-section="education-section">
+          <div class="dot-nav__dot" style="--dot-color: #3ef50d;"></div>
+          <div class="dot-nav__label">EDUCATION</div>
+      </div>
+      <div class="dot-nav__item" data-section="projects-section">
+          <div class="dot-nav__dot" style="--dot-color: #00eaff;"></div>
+          <div class="dot-nav__label">MY PROJECTS</div>
+      </div>
+      <div class="drag-handle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round">
+            <path d="M12 2v20M12 2l-4 4M12 2l4 4M12 22l-4-4M12 22l4-4M2 12h20M2 12l4-4M2 12l4 4M22 12l-4-4M22 12l-4 4"/>
+          </svg>
+      </div>
+    </div>
+
+    <header>
+        <h1 class="fluid" id="hello-section">Hello<br />My name is<br /> Denis</h1>
+    </header>
+
+    <main>
+        <section class="content fluid" id="skills-section">
+            <h2><span aria-hidden="true">I`m&nbsp;</span>
+                <span class="sr-only">I am a versatile IT professional with expertise in:</span>
+            </h2>
+            <ul aria-hidden="true" style="--count: 13">
+              <!-- Testing & Quality Assurance -->
+              <li style="--i: 0">QA Engineer</li>
+      
+              <!-- Development -->
+              <li style="--i: 1">Full-Stack Dev</li>
+              <li style="--i: 2">Web Designer</li>
+              <li style="--i: 3">Java Dev</li>
+              <li style="--i: 4">Node.js Dev</li>
+              <li style="--i: 5">Flutter Dev</li>
+              <li style="--i: 6">Python Dev</li>
+              <li style="--i: 7">C++ Dev</li>
+      
+              <!-- Database & Cloud -->
+              <li style="--i: 8">DB Manager</li>
+              <li style="--i: 9">Cloud Services Spec.</li>
+      
+              <!-- IT & Networking -->
+              <li style="--i: 10">Network Analyst</li>
+              <li style="--i: 11">IT Support Specialist</li>
+      
+              <!-- Soft Skills -->
+              <li style="--i: 12">Problem Solver</li>
+            </ul>
+        </section>
+        
+        <section class="task-section">
+          <h2 class="fluid task">Check menu <br /> To know more</h2>
+        </section>
+
+    </main>
+
+    <footer>
+      <div class="rounded-social-buttons">
+          <a class="social-button facebook" href="https://www.facebook.com/profile.php?id=61573949626556" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-button x" href="https://x.com/denis_oleks_005" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a class="social-button linkedin" href="https://www.linkedin.com/in/denis-derus-9700a92b9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a class="social-button github" href="https://github.com/denis-polit" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-button djinni" href="https://djinni.co/q/23192a20a0/" target="_blank"><i class="fas fa-briefcase"></i></a>
+      </div>
+    </footer>
+
+</body>
+</html>
